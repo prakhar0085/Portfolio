@@ -180,9 +180,9 @@ export function Hero() {
               {/* Profile Image */}
               <div className="w-full h-full rounded-2xl overflow-hidden border border-border/30 bg-neutral-900">
                 <img
-                  src="https://github.com/prakhar0085.png"
+                  src="/prakhar.jpg"
                   alt="Prakhar Tiwari"
-                  className="w-full h-full object-cover grayscale opacity-95 hover:grayscale-0 hover:opacity-100 transition-all duration-700"
+                  className="w-full h-full object-cover opacity-100 hover:scale-105 transition-all duration-700"
                 />
               </div>
 

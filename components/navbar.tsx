@@ -53,9 +53,11 @@ export function Navbar() {
           )}
         >
           <a href="#home" className="flex items-center gap-2 pl-1">
-            <span className="flex h-7 w-7 items-center justify-center rounded-md bg-foreground text-background text-[11px] font-bold">
-              PT
-            </span>
+            <img
+              src="/prakhar.jpg"
+              alt="Prakhar Tiwari"
+              className="h-7 w-7 rounded-md object-cover border border-accent/40 shadow-sm"
+            />
             <span className="font-display text-sm font-semibold tracking-tight hidden sm:block">
               Prakhar Tiwari
             </span>
