@@ -67,19 +67,27 @@ export function Experience() {
                     {exp.role}
                   </motion.h3>
 
-                  <motion.div variants={itemVariants}>
+                  <motion.div variants={itemVariants} className="mt-1.5 flex items-center gap-2">
+                    {exp.logo && (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={exp.logo}
+                        alt={`${exp.company} logo`}
+                        className="h-6 w-6 shrink-0 rounded-full bg-white object-cover"
+                      />
+                    )}
                     {exp.url ? (
                       <a
                         href={exp.url}
                         target="_blank"
                         rel="noreferrer"
-                        className="mt-1 inline-flex items-center gap-1.5 text-[11px] text-secondary hover:text-foreground"
+                        className="inline-flex items-center gap-1.5 text-xs font-semibold text-foreground/80 hover:text-foreground"
                       >
                         <span className="border-b border-border">{exp.company}</span>
                         <ArrowUpRight className="h-3 w-3 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
                       </a>
                     ) : (
-                      <p className="mt-1 text-[11px] text-secondary">
+                      <p className="text-xs font-semibold text-foreground/80">
                         <span className="border-b border-border">{exp.company}</span>
                       </p>
                     )}

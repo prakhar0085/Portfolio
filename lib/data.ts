@@ -153,12 +153,14 @@ export type Experience = {
   achievements: string[];
   tech: string[];
   url?: string;
+  logo?: string;
 };
 
 export const EXPERIENCES: Experience[] = [
   {
     role: 'Full Stack Developer',
     company: 'WiseAnalytics',
+    logo: '/wiseanalytics.png',
     period: 'Jul 2026 — Present',
     duration: 'Full-time',
     location: '',
@@ -175,6 +177,7 @@ export const EXPERIENCES: Experience[] = [
   {
     role: 'SDE Intern',
     company: 'Slash Mark IT Solutions (OPC) Pvt. Ltd.',
+    logo: '/slashmark.png',
     period: 'Apr 2026 — Jun 2026',
     duration: '2 Months',
     location: 'Remote',
@@ -187,7 +190,6 @@ export const EXPERIENCES: Experience[] = [
       'Refactored backend modules into reusable, testable services and hardened auth/session handling, enabling the system to reliably support multiple concurrent users without degradation.',
     ],
     tech: ['Node.js', 'Express.js', 'REST APIs', 'PostgreSQL', 'MongoDB', 'Query Optimization', 'Auth Security'],
-    url: 'https://slashmark.in/',
   },
   {
     role: 'Freelance Full-Stack Developer',
@@ -203,7 +205,6 @@ export const EXPERIENCES: Experience[] = [
       'Managed end-to-end production deployment, including custom domain configuration, DNS setup, SSL, and hosting on Vercel and MongoDB Atlas.',
     ],
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Vercel', 'Security', 'DNS/SSL'],
-    url: 'https://github.com/prakhar0085',
   },
 ];
 
